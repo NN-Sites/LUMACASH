@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LumaCash</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              primary: {
+                DEFAULT: 'hsl(210, 90%, 50%)',
+                light: 'hsl(210, 90%, 60%)',
+                dark: 'hsl(210, 90%, 45%)',
+              },
+              secondary: 'hsl(180, 80%, 40%)',
+              background: 'hsl(0, 0%, 98%)',
+              foreground: 'hsl(240, 10%, 3.9%)',
+              card: 'hsl(0, 0%, 100%)',
+              'dark-background': 'hsl(240, 10%, 3.9%)',
+              'dark-foreground': 'hsl(0, 0%, 98%)',
+              'dark-card': 'hsl(240, 5%, 12%)',
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+  }
+}
+</script>
+</head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
